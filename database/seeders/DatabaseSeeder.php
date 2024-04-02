@@ -20,7 +20,9 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            ProjectSeeder::class
+            ProjectSeeder::class,
+            //faccio seed dedicata altrimenti rilancia 'projectseeder' creando altri 10 dati
+            TypeSeeder::class
         ]);
     }
 }
