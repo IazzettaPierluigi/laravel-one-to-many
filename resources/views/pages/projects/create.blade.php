@@ -32,12 +32,12 @@
 
 {{-- creiamo la select per selezionare il TYPE --}}
 <div class="mb-3">
-    <label for="software" class="form-label">Scegli il type</label>
+    <label for="type_id" class="form-label">Scegli il type</label>
     <select class="form-select" name="type_id" id="type_id">
         <option selected value="">Seleziona un type</option>
         
         @foreach ($types as $item)
-            <option value="">{{ $item->name }}</option>
+            <option value="{{ $item->id }}">{{ $item->name }}</option>
         @endforeach
     </select>
 </div>
